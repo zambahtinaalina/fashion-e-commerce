@@ -1,0 +1,1477 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+$grey: #979EA9;
+$black: #202023;
+$dark-grey: #555555;
+$white: #FFFFFF;
+$dark-white: #F4F4F6;
+$color-block: #F6F7FB;
+$lite-gray: #C1C4CA;
+$DM-Sans: 'DM Sans';
+$DM: 'DM';
+$AF: 'AF';
+$Bold: 'Bold';
+
+@mixin flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin center {
+    display: flex;
+    align-items: center;
+}
+
+@mixin just-center {
+    display: grid;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: 'Bold';
+    src: url('../fonts/DM/DMSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/DM/DMSans-Regular.ttf')
+}
+
+@font-face {
+    font-family: 'DM';
+    src: url('../fonts/DM/DMSans-Medium.ttf')
+
+}
+
+
+@font-face {
+    font-family: 'AF';
+    src: url('../fonts/AF/AbrilFatface-Regular.ttf')
+}
+
+@media screen and (min-width: 1280px){
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+   
+  }}
+
+.color {
+    background-color: #F8F9FD;
+    width: 100%;
+    height: 992px;
+
+}
+header {
+    display: flex;
+    justify-content: center;
+    margin-right: 7px;
+}
+
+.spisok {
+    list-style: none;
+    display: flex;   
+}
+
+.shop {
+    font-family: $DM-Sans;
+    font-size: 16px;
+    color: $dark-grey;
+    text-decoration: none;
+}
+
+.sh{
+    margin-top: 37px;
+}
+
+.elipse {
+    margin-left: 24px;
+    width: 3px;
+    height: 3px;
+    margin-top: 47.5px;
+}
+
+.category {
+    margin-top: 37px; 
+    margin-left: 24px;  
+}
+
+.cat {
+    color: $dark-grey;
+    text-decoration: none;
+    font-family: $DM-Sans;
+    font-size: 16px;
+
+}
+
+.contact{
+    margin-left: 24px;
+    margin-top: 37px;
+}
+
+.con{
+    font-family: $DM-Sans;
+    font-size: 16px;
+    color: $dark-grey;
+    text-decoration: none;
+}
+
+.er{
+    margin-left: 319.5px;
+    margin-top: 36px;
+    width: 24px;
+    height: 24px;
+}
+
+.eriko{
+    margin-top: 37px;
+    margin-left: 9.9px;
+    font-family: $DM;
+    font-size: 18px;
+    color: $black;
+}
+
+.lupa{
+    margin-top: 39px;
+    margin-left: 440.6px;
+    width: 18.26px;
+    height: 20px;
+}
+
+
+
+.korzina{
+    margin-top: 39px;
+    margin-left: 36px;
+    width: 23.44px;
+    height: 20.31px;
+}
+
+.people{
+    margin-top: 36px;
+    margin-left: 36px;
+    width: 24px;
+    height: 24px;
+
+}
+
+.levo{
+    display: flex;
+    margin-left: 90px;
+    margin-top: 132px;
+}
+
+.discover{
+    font-size: 70px;
+    font-family: $AF;
+    position: absolute; z-index: 2;
+    line-height: 72px;
+}
+
+.last-line{
+    display: block;
+    margin-top: 10px;
+}
+
+.vector{
+    padding-left: 145px;
+    padding-top: 73px;
+    position: absolute; z-index: 1;
+    width: 285px;
+    height: 86.23px;
+
+}
+
+.fon{
+    display: flex;
+    position: absolute; z-index: 1;
+    padding-top:0;
+    margin-left: 170px;
+    width: 710px;
+    height: 992px;
+}
+
+.negr{
+    position: absolute; z-index: 2;
+    margin-top: 98px;
+    margin-left: 162px;
+    width: 617px;
+    height: 894px;
+}
+
+.krug{
+    position: absolute; z-index: 3;
+    width: 115px;
+    height: 114.94px;
+    margin-top: 183px;
+    margin-left: 812px;
+    
+}
+
+.hz{
+    @include flex-end;
+    position: relative;
+}
+
+.pravo {
+    @include flex-column;
+    position: absolute; 
+    right: 55px;      
+    top: -470px;     
+    z-index: 10;
+}
+
+
+.ochki{
+    width: 213px;
+    height: 148px;
+
+}
+
+.best{
+    font-family: $AF;
+    font-size: 24px;
+    letter-spacing: -1px;
+    white-space: nowrap;
+    word-spacing: 4px;
+    padding-top: 23px;
+    padding-right: 2px;
+}
+
+.white{
+    font-family: $DM-Sans;
+    font-size: 14px;
+    color: $grey;
+    padding-top: 23px;
+}
+
+.accurate{
+    font-family: $DM-Sans;
+    font-size: 14px;
+    color: $grey;
+    padding-top: 7px;
+}
+
+.most{
+    font-family: $DM-Sans;
+    font-size: 14px;
+    color: $grey;
+    padding-top: 6px;
+}
+
+.show{
+    display: flex;
+    font-family: $DM-Sans;
+    font-size: 15px;
+    line-height: 170%;
+    color: #EC5A33;
+    position: absolute; z-index: 1;
+    text-underline-offset: 7px;
+    padding-top: 37px;
+    text-decoration: underline;
+}
+
+.strelka{
+    position: absolute; z-index: 2;
+    margin-top: -134px;
+    margin-right: 105px;
+}
+
+.hz1{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.lev{
+    @include flex-end;
+    flex-direction: column;
+    margin-top: 303px;
+    margin-left: 25px;
+}
+.krossi{
+    width: 286px;
+    height: 149px;
+    padding-top: 180px;
+    margin-left: -48px;
+}
+
+.nike{
+    font-family: $AF;
+    font-size: 24px;
+    color: $black;
+    padding-top: 5px;
+    margin-left: -25px;
+}
+
+.amazing{
+    font-family: $DM-Sans;
+    font-size: 18px;
+    line-height: 170%;
+    white-space: nowrap;
+    color: $grey;
+}
+
+.logo{
+    width: 81.68;
+    height: 21px;
+    margin-top: 414px;
+    margin-left: -343px;
+}
+
+.logo1{
+    width: 77.7px;
+    height: 21px;
+    margin-top: 414px;
+    margin-left: 40px;
+}
+
+.logo2{
+    width: 78.58px;
+    height: 21px;
+    margin-top: 415px;
+    margin-left: 40px;
+}
+
+.palka{
+    width: 1.5px;
+    height: 130px;
+    margin-top: 304px;
+}
+
+/* Вторая страница */
+
+.newcol{
+    font-family: $AF;
+    font-size: 45px;
+    color: $black;
+    text-align: center;
+    margin-top: 110px;
+}
+
+.str2{
+    @include just-center;
+    grid-template-columns: 574px 574px;
+    grid-template-rows: 292px 292px;
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+    margin-top: 32px;
+}
+
+.blok1{
+    @include center;
+    background-color: $dark-white;
+    position: relative;
+    
+}
+
+.bloktext{
+    flex-direction: column;
+}
+
+.stylish{
+    font-family: $DM;
+    font-size: 32px;
+    letter-spacing: -1%;
+    padding-bottom: 48px;
+    padding-left: 40px;
+}
+
+.colorfull{
+    display: block;
+    margin-top: -4px;
+}
+
+.money{
+    position: relative;
+    top: -36px;
+    left: 40px;
+    font-family: $DM;
+    font-size: 20px;
+    color: #838A95;
+}
+
+.man{
+    position: absolute;
+    bottom: 0;
+    justify-content: flex-end;
+    padding-left: 238px;
+}
+
+.blok2{
+    @include center;
+    background-color: $dark-white;
+    position: relative;
+}
+
+.bloktext2{
+    flex-direction: column;
+}
+
+.elegant{
+    font-family: $DM;
+    font-size: 32px;
+    letter-spacing: -1%;
+    color: $black;
+    padding-left: 40px;
+    padding-bottom: 33px;
+}
+
+.sparow{
+    display: block;
+    margin-top: -4px;
+}
+
+.free{
+    position: relative;
+    top: -22px;
+    left: 40px;
+    font-family: $DM-Sans;
+    font-size: 16px;
+    letter-spacing: -1%;
+    color: $grey;
+}
+
+.blackhats{
+    display: block;
+    margin-top: 5px;
+}
+
+.man2{
+    position: absolute;
+    bottom: 0;
+    justify-content: flex-end;
+    padding-left: 247px;
+}
+
+.blok3{
+    @include center;
+    background-color: $dark-white;
+    position: relative;
+}
+
+.bloktext3{
+    flex-direction: column;
+}
+
+.couple{
+    font-family: $DM;
+    font-size: 32px;
+    letter-spacing: -1%;
+    color: $black;
+    padding-left: 41px;
+    padding-bottom: 50px;
+}
+
+.thego{
+    display: block;
+    margin-top: -3px;
+}
+
+.money2{
+    position: relative;
+    top: -38px;
+    left: 40px;
+    font-family: $DM;
+    font-size: 20px;
+    color: #838A95;
+}
+
+.offer{
+    position: relative;
+    top: -21px;
+    left: 40px;
+    font-family: $DM-Sans;
+    font-size: 16px;
+    letter-spacing: -1%;
+    color: $grey;
+}
+
+.peoples{
+    position: absolute;
+    bottom: 0;
+    justify-content: flex-end;
+    padding-left: 232px;
+    width: 302px;
+    height: 283px;
+}
+
+.blok4{
+    background-color: $dark-white;
+    @include center;
+    position: relative;
+}
+
+.bloktext4{
+    flex-direction: column;
+}
+
+.trendy{
+    font-family: $DM;
+    font-size: 32px;
+    letter-spacing: -1%;
+    color: $black;
+    padding-left: 40px;
+    padding-bottom: 32px;
+}
+
+.wohill{
+    display: block;
+    margin-top: -2px;
+}
+
+.fre{
+    position: relative;
+    top: -23px;
+    left: 40px;
+    font-family: $DM-Sans;
+    font-size: 16px;
+    letter-spacing: -1%;
+    color: $grey;
+
+}
+
+.money3{
+    position: relative;
+    top: -4px;
+    left: 40px;
+    font-family: $DM;
+    font-size: 20px;
+    color: #838A95;
+}
+
+.woman{
+    position: absolute;
+    bottom: 0;
+    justify-content: flex-end;
+    padding-left: 230px;
+}
+
+.our{
+    font-family: $AF;
+    font-size: 45px;
+    color: $black;
+    text-align: center;
+    margin-top: 112px;
+}
+
+.str3{
+    @include just-center;
+    grid-template-columns: 103px 105px 87px 99px 103px 82px 121px 102px 87px;
+    grid-template-rows: repeat(9, 39px);
+    grid-column-gap: 16px;
+    margin-top: 33px;
+}
+
+button{
+    border: none;
+    border-radius: 55px;
+    background-color: #F3F4F8;
+    cursor: pointer;
+    font-family: $DM-Sans;
+    font-size: 18px;
+}
+
+button:active{
+    background-color: #EC5A33; 
+}
+
+.clothes-grid{ 
+    @include just-center;
+    grid-template-columns: repeat(3, 372px);
+    grid-template-rows: repeat(2, 464px);
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+    margin-top: -272px;
+}
+
+.bl1{
+    background: linear-gradient(to bottom, $color-block 70%, $white 30%);
+    @include flex-column;
+}
+
+.bl2{
+    background: linear-gradient(to bottom, $color-block 70%, $white 30%);
+    @include flex-column;
+}
+
+.bl3{
+    background: linear-gradient(to bottom, $color-block 70%, $white 30%);
+    @include flex-column;
+}
+
+.bl4{
+    background: linear-gradient(to bottom, $color-block 70%, $white 30%);
+    @include flex-column;
+}
+
+.bl5{
+    background: linear-gradient(to bottom, $color-block 70%, $white 30%);
+   @include flex-column;
+}
+
+.bl6{
+    background: linear-gradient(to bottom, $color-block 70%, $white 30%);
+   @include flex-column;
+}
+
+.odegda{
+    display: flex;
+    justify-content: center;
+} 
+
+.jacket{
+    justify-content: center;
+    transform: translateY(-15px);
+    
+}
+
+.heart-button {
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.2s;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.heart-button svg {
+    fill: transparent;
+    stroke: $black;
+    stroke-width: 1.5px;
+    transition: all 0.3s ease;
+}
+
+.heart-button:hover svg {
+    fill: #F32647;
+    stroke: #F32647;
+}
+
+.heart-button.active svg {
+    fill: #F32647;
+    stroke: #F32647;
+}
+
+.heart-button:active {
+    transform: scale(0.85);
+}
+
+.nikeair{
+    font-family: $DM;
+    font-size: 22px;
+    color: $black;
+    margin-left: 1px;
+    margin-top: 52px;
+}
+
+.dollars{
+    font-family: $Bold;
+    font-size: 20px;
+    color: #838A95;
+    margin-top: 17px;
+    
+}
+
+.review{
+    font-family: $DM-Sans;
+    font-size: 20px;
+    color: $grey;
+}
+
+.stars{
+    width: 108px;
+    height: 20px;
+}
+
+.row{
+    display: flex;
+    justify-content: flex-start;
+    gap:17px;
+    margin-top: 21px;
+}
+
+.hudi{
+    transform: translateY(-65px);
+}
+
+.senken{
+    font-family: $DM;
+    font-size: 22px;
+    color: $black;
+}
+
+.time{
+    transform: translateY(-40px);
+}
+
+.rubaska{
+    transform: translateY(-60px);
+}
+
+.tapki{
+    transform: translateY(-85px);
+}
+
+.kepka{
+    transform: translateY(-104px);
+    position: relative; z-index: 2;
+}
+
+.ten{
+    position: absolute; z-index: 1;
+    transform: translateY(-50px);
+    margin-right: 30px;
+}    
+    
+.strtext3{
+    @include flex-column;
+    align-items: center;
+    margin-top: 113px;
+}
+
+.recent{
+    font-family: $AF;
+    font-size: 45px;
+    color: $black;
+}
+
+.findwhat{
+    font-family: $DM-Sans;
+    font-size: 18px;
+    color: $grey;
+    margin-top: 16px;
+
+}
+
+.in{
+    font-family: $DM-Sans;
+    font-size: 18px;
+    color: $grey;
+    margin-top: 7px;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: 574px  271px 271px;
+  grid-template-rows: repeat(2, 271px);
+  gap: 32px; 
+  padding-left: 25px;
+  padding-top: 42px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+}
+
+.main-item {
+  grid-row: span 2;
+}
+
+.footer{
+    @include center;
+    background-color: #222222;
+    width: 100%;
+    margin-top: 120px;
+    min-height: 447px;
+    flex-direction: column;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: 316px 106px 106px 288px;
+    grid-template-rows: 263px;
+    grid-column-gap: 100px;
+    margin-top: 80px;
+}
+
+.footerico{
+    width: 40.71px;
+    height: 40.71px;
+    margin-left: -30px;
+}
+
+.footext1{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2px;
+}
+
+.footericotext{
+    font-family: $DM;
+    font-size: 30.53px;
+    color: $white;
+    margin-left: 16px;
+}
+
+.nor{
+    font-family: $DM-Sans;
+    font-size: 16px;
+    color: $lite-gray;
+    white-space: nowrap;
+    margin-top: 23px;
+    margin-left: -31px;
+    line-height: 32px;
+}
+
+.socseti{
+    
+    margin-top: 23px;
+}
+
+.insta{
+    margin-left: -32px;
+}
+
+.ins{
+    margin-left: 17px;
+}
+
+.facebuk{
+    margin-left: 16px;
+}
+
+.twiter{
+    margin-left: 16px;
+}
+
+.spisokfoot{
+    list-style-type: none;
+    font-family: $DM;
+    font-size: 16px;
+    line-height: 42px;
+    margin-top: 28px;
+    margin-left: -10px;
+    
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: $lite-gray;
+}
+
+.about{
+    font-family: $DM-Sans;
+    font-size: 20px;
+    color: $white;
+    margin-left: -10px;
+    margin-top: 2px;
+    
+}
+
+.privacy{
+    font-family: $DM-Sans;
+    font-size: 20px;
+    color: $white;
+    margin-top: 2px;
+    margin-left: 12px;
+}
+
+.spisokfoot1{
+    list-style-type: none;
+    font-family: $DM;
+    font-size: 16px;
+    line-height: 42px;
+    margin-top: 26px;
+    margin-left: 11px;
+}
+
+.newsletter{
+    font-family: $DM-Sans;
+    font-size: 20px;
+    color: $white;
+    margin-left: 32px;
+    margin-top: 1px;
+    
+}
+
+.subscribe{
+    font-family: $DM-Sans;
+    font-size: 16px;
+    color: $lite-gray;
+    white-space: nowrap;
+    margin-left: 32px;
+    margin-top: 25px;
+    line-height: 24px;
+}
+
+.input{
+    @include center;
+    justify-content: space-between;
+    border-bottom: 1px solid $white;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    color: $white;
+}
+
+.input input{
+    background: transparent;
+    border: none;
+    color: $white;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    font-family: $Bold;
+    font-size: 14px;
+}
+
+.subscribe-btn{
+    position: relative;
+    background-color: #EC5A33;
+    color: $white;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    width: 288px;
+    height: 40px;
+    word-spacing: 3px;
+    margin-top: -10px;
+    text-align: left;
+    padding-left: 20px;
+    font-family: $Bold;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: $white;
+    opacity: 1;
+}
+
+.formfoot{
+    margin-left: 31px;
+    margin-top: 20px;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid #444; 
+    padding-top: 33px;   
+    padding-left: 3px;        
+    margin-top: 32px; 
+    width: 1180px;      
+    font-family: $DM-Sans;
+    font-size: 14px;
+    color: $white;
+}
+
+.cont{
+    font-family: $DM-Sans;
+    color: $white;
+    font-size: 14px;
+    margin-left: 698px;
+}
+
+.terms{
+    font-family: $DM-Sans;
+    color: $white;
+    font-size: 14px;
+    margin-left: -3px;
+    
+}
+
+.allrights{
+    font-family: $DM-Sans;
+    color: $white;
+    font-size: 14px;
+    padding-right: 3px;
+}
+
+/* 2. Стили для iPhone 12 и других смартфонов */
+@media screen and (max-width: 480px) {
+  
+  .color {
+    background-color: transparent !important;
+    height: auto !important;
+    min-height: 700px;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 40px;
+    width: 100%;
+  }
+
+  /* Шапка */
+  header {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0 !important;
+    padding: 0 15px;
+  }
+
+  .spisok {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px 20px;
+    padding: 15px 0;
+    margin-bottom: 20px;
+  }
+
+  .sh, .category, .contact {
+    margin-top: 0;
+  }
+
+  .category, .contact {
+    margin-left: 0;
+  }
+
+  .elipse {
+    display: none;
+  }
+
+  .er {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .eriko {
+    margin-top: 0;
+    margin-left: 5px;
+  }
+
+  .lupa, .korzina, .people {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .lupa {
+    margin-left: auto;
+  }
+
+  .fon {
+    display: none !important;
+  }
+
+  .negr {
+    display: block;
+    position: relative;
+    width: 80%;
+    height: auto;
+    max-width: 300px;
+    margin: 20px auto;
+    z-index: 2;
+  }
+
+  .krug {
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin-top: 50px;
+    right: 20px;
+    z-index: 3;
+  }
+
+  /* Левая часть */
+  .levo {
+    flex-direction: column;
+    margin: 20px 15px !important;
+  }
+
+  .discover {
+    position: relative !important;
+    font-size: 42px !important;
+    line-height: 1.1 !important;
+    text-align: center;
+    margin-bottom: 20px;
+    z-index: 4;
+    color: #202023;
+    text-shadow: 2px 2px 4px rgba(255,255,255,0.5);
+  }
+
+  .vector, .palka {
+    display: none;
+  }
+
+  .hz1 {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .lev {
+    margin: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .amazing {
+    white-space: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #202023;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .krossi {
+    padding-top: 0;
+    margin-left: 0;
+    width: 200px;
+    height: auto;
+  }
+
+  .nike {
+    margin-left: 0;
+    font-size: 22px;
+    color: #202023;
+  }
+
+  .logo, .logo1, .logo2 {
+    margin: 10px 5px;
+    position: static;
+    width: auto;
+    height: 20px;
+  }
+
+  /* Правая часть */
+  .hz {
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .pravo {
+    position: relative;
+    right: auto;
+    top: auto;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px 15px;
+  }
+
+  .ochki {
+    width: 150px;
+    height: auto;
+  }
+
+  .best {
+    white-space: normal;
+    font-size: 22px;
+    word-spacing: normal;
+    padding-top: 15px;
+  }
+
+  .white, .accurate, .most {
+    white-space: normal;
+    text-align: center;
+    list-style: none;
+    padding-top: 10px;
+  }
+
+  .show {
+    position: relative;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  .strelka {
+    display: none;
+  }
+
+  .str2 {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+    padding: 0 15px;
+    margin-top: 20px;
+  }
+
+  .blok1, .blok2, .blok3, .blok4 {
+    display: flex !important;
+    flex-direction: row !important; 
+    align-items: center;
+    justify-content: space-between;
+    
+    height: 220px !important;    
+    padding: 20px 25px;
+    background-color: #F4F4F6;
+    border-radius: 15px;
+    position: relative;          
+    overflow: hidden;
+  }
+
+  .bloktext, .bloktext2, .bloktext3, .bloktext4 {
+    width: 60%;                 
+    text-align: left;
+    z-index: 2;
+  }
+
+  .man, .man2, .peoples, .woman {
+    position: absolute !important; 
+    right: 5px;                  
+    bottom: 0;                   
+    
+    width: 45% !important;       
+    max-width: 200px !important; 
+    height: 90% !important;      
+    
+    display: flex;
+    align-items: flex-end;      
+    justify-content: flex-end;
+  }
+
+  .man img, .man2 img, .peoples img, .woman img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;       
+    object-position: right bottom;
+  }
+
+
+  .clothes-grid {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+    margin-top: 20px !important;
+    padding: 0 15px;
+  }
+
+  .bl1, .bl2, .bl3, .bl4, .bl5, .bl6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 15px;
+    background: #F6F7FB;
+    border-radius: 12px;
+  }
+
+  .odegda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 150px;
+    margin: 10px 0;
+  }
+
+  .jacket, .hudi, .time, .rubaska, .tapki, .kepka {
+    transform: none !important;
+    position: static !important;
+    max-width: 70%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .ten {
+    display: none;
+  }
+
+  .nikeair, .senken {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .dollars {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .stars {
+    width: 80px;
+  }
+
+  .review {
+    font-size: 14px;
+  }
+
+  /* Кнопки категорий */
+  .str3 {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 15px;
+    margin-top: 20px;
+  }
+
+  /* Галерея */
+  .strtext3 {
+    margin: 40px 15px 20px;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .recent {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .findwhat,
+  .in {
+    font-size: 16px;
+    white-space: normal;
+    margin-top: 10px;
+    line-height: 1.5;
+  }
+
+  .gallery-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 15px;
+  }
+
+  .item {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .main-item {
+    grid-row: span 1;
+  }
+
+  /* Футер */
+  .footer {
+    margin-top: 50px;
+    padding: 40px 20px 20px;
+    height: auto;
+    min-height: auto;
+  }
+
+  .footer-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+  }
+
+  .footext1 {
+    margin-left: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footerico {
+    margin-left: 0;
+    width: 35px;
+    height: 35px;
+  }
+
+  .footericotext {
+    font-size: 26px;
+    margin-left: 10px;
+  }
+
+  .nor {
+    white-space: normal;
+    margin-left: 0;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 15px;
+    padding: 0 10px;
+  }
+
+  .socseti {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .socseti img {
+    margin: 0;
+    width: 35px;
+    height: 35px;
+  }
+
+  .about, .privacy, .newsletter {
+    margin-left: 0;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .spisokfoot, .spisokfoot1 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .spisokfoot li, .spisokfoot1 li {
+    margin-bottom: 10px;
+  }
+
+  .subscribe {
+    white-space: normal;
+    margin-left: 0;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 0 15px;
+  }
+
+  .formfoot {
+    margin-left: 0;
+    margin-top: 25px;
+    width: 100%;
+    max-width: 320px;
+    margin: 20px auto 0;
+  }
+
+  .input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .subscribe-btn {
+    width: 100%;
+    height: 45px;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    padding: 25px 15px 0;
+    margin-top: 40px;
+    text-align: center;
+    border-top: 1px solid #444;
+  }
+
+  .cont, .terms, .allrights {
+    margin: 0;
+    font-size: 14px;
+  }
+}
